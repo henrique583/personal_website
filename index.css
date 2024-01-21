@@ -1,0 +1,48 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #e4e4e4;
+    font-family: INTER;
+}
+
+.container {
+    font-size: 40px;
+    font-weight: 300;
+    color: #06CDFF;
+    text-align: center; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0 auto;
+    margin-top: -50px;
+}
+
+.image img {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.coming-soon {
+    white-space: nowrap;
+}
+
+.linkedin {
+    background-color: #06CDFF;
+    border: 2px solid;
+    font-size: 20px;
+    color: #e4e4e4;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.linkedin:hover{
+    background-color: #e4e4e4;
+    color: #06CDFF;
+    transform: scale(1.05);
+}
