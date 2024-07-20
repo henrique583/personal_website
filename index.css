@@ -2,8 +2,32 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    background-color: white;
     font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+.header {
+    border-bottom: 0.5px solid black;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px 10px 20px;
+}
+
+.logo img{
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.menu {
+    color: #06CDFF;
+    font-size: 18px;
+    margin-left: auto;
+    display: flex;
+    gap: 20px;
 }
 
 .container {
@@ -19,6 +43,7 @@
     margin: 0 auto;
     margin-top: -50px;
 }
+
 
 .image img {
     width: 284px;
