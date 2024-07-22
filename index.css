@@ -16,6 +16,11 @@ body {
     padding: 10px 20px 10px 20px;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+}
+
 .logo h1{
     color: #06CDFF;
     font-size: 24px;
@@ -28,10 +33,21 @@ body {
     font-weight: 400;
     margin-left: auto;
     display: flex;
+    align-items: center;
     gap: 20px;
 }
 
-.home:hover, .portfolio:hover, .projects:hover, .about-me:hover {
-    color: #f0f0f0;
-    cursor: pointer;
+.menu a {
+    color: #06CDFF;
+    text-decoration: none;
+}
+
+.contact-button {
+    background-color: #06CDFF;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50px;
 }
