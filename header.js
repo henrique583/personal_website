@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
         modal.classList.remove("show");
         setTimeout(() => {
             modal.close();
-        }, 300); // Wait for the transition to complete before hiding
+        }, 200); // Wait for the transition to complete before hiding
     });
 
     // When the user clicks anywhere outside of the modal, close it
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
             modal.classList.remove("show");
             setTimeout(() => {
                 modal.close();
-            }, 300); // Wait for the transition to complete before hiding
+            }, 200); // Wait for the transition to complete before hiding
         }
     });
 });
