@@ -62,39 +62,42 @@ nav.menu a {
 }
 
 /* Modal styles */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+.contact-modal {
+    border: none;
+    border-radius: 25px;
+    width: 80%;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(-50%); /* Initial position */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.contact-modal.show {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Slide down */
 }
 
 .modal-content {
-    background-color: white;
-    margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-    max-width: 300px; /* Limit the maximum width */
-    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
 }
 
 .close-button {
+    position: absolute;
+    top: 8px;
+    right: 14px;
     color: #aaa;
-    float: right;
     font-size: 28px;
-    font-weight: bold;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 .close-button:hover,
 .close-button:focus {
     color: black;
     text-decoration: none;
-    cursor: pointer;
 }
