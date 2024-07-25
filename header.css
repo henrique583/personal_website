@@ -11,6 +11,7 @@ body {
     padding: 10px 20px 40px 20px;
 }
 
+/* Header styles */
 header {
     display: flex;
     align-items: center;
@@ -66,12 +67,11 @@ nav.menu a {
     border: none;
     border-radius: 25px;
     width: 80%;
-    max-width: 400px;
+    max-width: 540px;
     margin: auto;
-    text-align: center;
     opacity: 0; /* Initially hidden */
     transform: translateY(-50%); /* Initial position */
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
 .contact-modal.show {
@@ -80,10 +80,18 @@ nav.menu a {
 }
 
 .modal-content {
-    padding: 20px;
+    padding: 30px;
+    text-align: right;
     background-color: white;
     border-radius: 5px;
     position: relative;
+}
+
+.modal-header {
+    font-weight: 400;
+    text-align: center;
+    color: #06CDFF;
+    padding-bottom: 20px;
 }
 
 .close-button {
@@ -100,4 +108,30 @@ nav.menu a {
 .close-button:focus {
     color: black;
     text-decoration: none;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px; /* Adjust the gap as needed */
+    margin-bottom: 10px; /* Add space between items */
+}
+
+.social-logo {
+    width: 60px;
+    margin-top: 14px;
+}
+
+.contact-item a {
+    color: inherit; /* Ensure link colors match the rest of the text */
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+.contact-item p {
+    flex-grow: 1;
+    text-align: right; /* Align links to the right */
 }
