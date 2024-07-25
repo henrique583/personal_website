@@ -11,6 +11,7 @@ body {
     padding: 10px 20px 40px 20px;
 }
 
+/* Header styles */
 header {
     display: flex;
     align-items: center;
@@ -25,6 +26,11 @@ header h1 {
 header h1 a {
     color: #06CDFF;
     text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+header h1 a:hover {
+    color: #05b1e0;
 }
 
 nav {
@@ -43,6 +49,11 @@ nav.menu {
 nav.menu a {
     color: #06CDFF;
     text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+nav.menu a:hover {
+    color: #05b1e0;
 }
 
 .contact-button {
@@ -54,9 +65,83 @@ nav.menu a {
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.2s ease;
 }
 
 .contact-button:hover {
     background-color: #05b1e0;
+}
+
+/* Modal styles */
+.contact-modal {
+    border: none;
+    border-radius: 25px;
+    width: 80%;
+    max-width: 540px;
+    margin: auto;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(-50%); /* Initial position */
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.contact-modal.show {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Slide down */
+}
+
+.modal-content {
+    padding: 30px;
+    text-align: right;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+}
+
+.modal-header {
+    font-weight: 400;
+    text-align: center;
+    color: #06CDFF;
+    padding-bottom: 20px;
+}
+
+.close-button {
+    position: absolute;
+    top: 8px;
+    right: 14px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px; /* Adjust the gap as needed */
+    margin-bottom: 10px; /* Add space between items */
+}
+
+.social-logo {
+    width: 60px;
+    margin-top: 14px;
+}
+
+.contact-item a {
+    color: inherit; /* Ensure link colors match the rest of the text */
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+.contact-item p {
+    flex-grow: 1;
+    text-align: right; /* Align links to the right */
 }
