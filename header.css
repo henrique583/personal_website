@@ -26,6 +26,11 @@ header h1 {
 header h1 a {
     color: #06CDFF;
     text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+header h1 a:hover {
+    color: #05b1e0;
 }
 
 nav {
@@ -44,6 +49,11 @@ nav.menu {
 nav.menu a {
     color: #06CDFF;
     text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+nav.menu a:hover {
+    color: #05b1e0;
 }
 
 .contact-button {
@@ -55,7 +65,7 @@ nav.menu a {
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.2s ease;
 }
 
 .contact-button:hover {
