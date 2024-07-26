@@ -1,5 +1,5 @@
 // Photo roulette animation
-window.onload = function() {
+document.addEventListener("DOMContentLoaded", function() {
     const photos = document.querySelectorAll('.photo-roulette .photo');
     let currentIndex = 0;
 
@@ -19,6 +19,4 @@ window.onload = function() {
 
     // Start the interval after a short delay to avoid initial fade-in
     setInterval(showNextPhoto, 5000); // Change image every 5 seconds
-};
-
-// 
+}); // Missing closing parenthesis and semicolon added here
