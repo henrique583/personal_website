@@ -8,13 +8,15 @@
 
 body {
     background-color: white;
-    padding: 10px 20px 40px 20px;
 }
 
 /* Header styles */
 header {
     display: flex;
     align-items: center;
+    padding-bottom: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 header h1 {
