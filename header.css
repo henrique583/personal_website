@@ -1,6 +1,7 @@
+/* Global styles */
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
     text-decoration: none;
@@ -21,7 +22,7 @@ header {
 
 header h1 {
     font-size: 24px;
-    font-weight:350;
+    font-weight: 350;
     margin: 0;
 }
 

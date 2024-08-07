@@ -2,7 +2,7 @@
     position: relative;
     width: 400px;
     height: 600px;
-    margin-left: 60px;
+    left: 60px;
 }
 
 .photo {
@@ -31,8 +31,12 @@
     font-weight: 400;
     width: 300px;
     position: relative;
-    margin-right: 60px;
+    margin-right: 50px;
     text-align: center;
+}
+
+.name-highlight {
+    color: #FF1493;
 }
 
 #intro {
