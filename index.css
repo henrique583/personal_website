@@ -3,6 +3,8 @@
     width: 400px;
     height: 600px;
     left: 60px;
+    border-radius: 50px;
+    box-shadow: -10px 8px 18px 0px rgba(0, 0, 0, 0.25);
 }
 
 .photo {
@@ -15,10 +17,13 @@
     left: 0;
     opacity: 0;
     transition: opacity 3.2s ease-in-out;
-    box-shadow: -10px 8px 18px 0px rgba(0, 0, 0, 0.40);
 }
 
-.photo.show {
+.photo-1 {
+    opacity: 1;
+}
+
+.photo.active {
     opacity: 1;
 }
 
@@ -27,7 +32,7 @@
 }
 
 .intro-text p{
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 400;
     width: 300px;
     position: relative;
@@ -43,13 +48,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: 150px;
+    margin-bottom: 200px;
 }
 
 
 #williams {
-    background-color: #500082;
     width: 100%;
-    height: 100px;
-    margin-top: 80px;
+    height: 400px;
 }
+
+

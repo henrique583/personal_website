@@ -1,22 +1,24 @@
-// Photo roulette animation
-document.addEventListener("DOMContentLoaded", function() {
-    const photos = document.querySelectorAll('.photo-roulette .photo');
+window.onload = function () {
+    // Get all the images and store them in an array
+    const images = document.querySelectorAll('.photo');
     let currentIndex = 0;
+    const imageCount = images.length;
 
-    // Add the show class and initial class to the first photo immediately
-    photos[currentIndex].classList.add('show', 'initial');
+    // Function to show the next image
+    function showNextImage() {
+        // Remove 'active' class from all images
+        images.forEach((img) => img.classList.remove('active'));
 
-    function showNextPhoto() {
-        photos[currentIndex].classList.remove('show');
-        currentIndex = (currentIndex + 1) % photos.length;
-        photos[currentIndex].classList.add('show');
+        // Add 'active' class to the current image
+        images[currentIndex].classList.add('active');
+
+        // Move to the next image, looping back to the start if necessary
+        currentIndex = (currentIndex + 1) % imageCount;
     }
 
-    // Remove the initial class after a short delay
-    setTimeout(function() {
-        photos[currentIndex].classList.remove('initial');
-    }, 50); // Adjust the delay as needed
+    // Show the first image immediately
+    showNextImage();
 
-    // Start the interval after a short delay to avoid initial fade-in
-    setInterval(showNextPhoto, 5000); // Change image every 5 seconds
-}); // Missing closing parenthesis and semicolon added here
+    // Set an interval to loop through the images every 3 seconds
+    setInterval(showNextImage, 3600);
+};
