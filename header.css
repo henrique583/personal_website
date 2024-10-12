@@ -21,7 +21,7 @@ header {
 }
 
 header h1 {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 350;
     margin: 0;
 }
@@ -37,15 +37,15 @@ header h1 a:hover {
 }
 
 nav {
-    padding-top: 5px;
+    padding-top: 7px;
 }
 
 nav.menu {
     display: flex;
     align-items: center;
     margin-left: auto;
-    gap: 20px;
-    font-size: 18px;
+    gap: 24px;
+    font-size: 24px;
     font-weight: 400;
 }
 
