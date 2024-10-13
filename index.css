@@ -52,10 +52,30 @@
     margin-bottom: 200px;
 }
 
+.williams-text {
+    font-size: 28px;
+    position: relative;
+    top: 280px;
+    left: 300px;
+}
 
 #williams {
     width: 100%;
     height: 400px;
 }
 
+.williams-logo-wrapper {
+    position: relative;
+    left: 1000px;
+    background-color: #500082;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
 
+}
+
+.williams-logo {
+    width: 400px;
+}
