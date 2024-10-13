@@ -1,0 +1,28 @@
+/* Global styles */
+:root {
+    --blue: hsl(192, 100%, 51%);
+    --darker-blue: hsl(193, 96%, 45%);
+    --pink: hsl(328, 100%, 54%);
+    --green: hsl(94, 100%, 54%);
+    --yellow: hsl(58, 100%, 50%);
+    --purple: hsl(254, 88%, 20%);
+    --white: hsl(0, 0%, 100%);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    background-color: white;
+    font-size: 28px;
+}

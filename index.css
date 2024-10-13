@@ -32,7 +32,6 @@
 }
 
 .intro-text p{
-    font-size: 28px;
     font-weight: 400;
     width: 300px;
     position: relative;
@@ -41,7 +40,7 @@
 }
 
 .name-highlight {
-    color: #FF1493;
+    color: var(--pink);
 }
 
 #intro {
@@ -53,7 +52,6 @@
 }
 
 .williams-text {
-    font-size: 28px;
     position: relative;
     top: 280px;
     left: 300px;
