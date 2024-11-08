@@ -75,6 +75,7 @@
     border-radius: 50%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .williams-logo {
@@ -109,3 +110,24 @@
 .berkeley-logo {
     width: 300px;
 }
+
+.best-college-text {
+    position: absolute;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotateText 12s linear infinite;
+    font-size: 1.5rem;
+    text-align: center;
+    pointer-events: none;
+}
+
+ @keyframes rotateText {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} 

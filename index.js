@@ -22,3 +22,27 @@ window.onload = function () {
     // Set an interval to loop through the images every 3 seconds
     setInterval(showNextImage, 3600);
 };
+
+
+// Circular animation for best-college-text
+const textElements = document.querySelectorAll(".best-college-text");
+
+textElements.forEach((textElement) => {
+    const text = textElement.innerText;
+    const radius = 200; // Adjust this value for larger rotation outside the circle
+
+    textElement.innerHTML = text
+        .split("")
+        .map((char, i) => `
+            <span style="
+                position: absolute;
+                transform: rotate(${i * (360 / text.length)}deg) 
+                           translate(${radius}px) 
+                           rotate(${-i * (360 / text.length)}deg);
+                transform-origin: center;
+            ">
+                ${char}
+            </span>
+        `)
+        .join("");
+});
