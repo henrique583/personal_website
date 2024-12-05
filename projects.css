@@ -1,0 +1,15 @@
+.placeholder-picture {
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 24vh;
+}
+
+.placeholder-text {
+    color: var(--blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 34px;
+}

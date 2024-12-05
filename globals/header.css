@@ -2,9 +2,8 @@
 header {
     display: flex;
     align-items: center;
-    padding-bottom: 20px;
-    padding-right: 60px;
-    padding-left: 60px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 header h1 {
@@ -24,7 +23,7 @@ header h1 a:hover {
 }
 
 nav {
-    padding-top: 7px;
+    padding-top: 6.8px;
 }
 
 nav.menu {

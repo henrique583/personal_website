@@ -46,3 +46,28 @@ textElements.forEach((textElement) => {
         `)
         .join("");
 });
+
+// Select the root element
+const root = document.documentElement;
+
+// Function to show the scrollbar thumb
+function showScrollbar() {
+    root.style.setProperty('--scrollbar-thumb-opacity', '1');
+}
+
+// Function to hide the scrollbar thumb after a delay
+function hideScrollbar() {
+    root.style.setProperty('--scrollbar-thumb-opacity', '0');
+}
+
+// Event listener to detect scrolling
+let scrollTimeout;
+window.addEventListener('scroll', () => {
+    showScrollbar(); // Show scrollbar thumb on scroll
+
+    // Clear previous timeout to reset delay
+    clearTimeout(scrollTimeout);
+
+    // Set a timeout to hide the scrollbar after 500ms of no scrolling
+    scrollTimeout = setTimeout(hideScrollbar, 500);
+});

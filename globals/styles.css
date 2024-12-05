@@ -26,3 +26,14 @@ body {
     background-color: white;
     font-size: 28px;
 }
+
+::-webkit-scrollbar {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--blue);
+    border-radius: 10px;
+    opacity: var(--scrollbar-thumb-opacity, 0);
+    transition: opacity 0.3s ease; 
+}
