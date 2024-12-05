@@ -56,21 +56,22 @@
 .arrow-1 {
     position: absolute;
     left: 50%;
-    top: 770px;
+    top: 760px;
     border: solid var(--purple);
-    border-width: 0 3px 3px 0;
+    border-width: 0 4px 4px 0;
     display: inline-block;
     padding: 10px;
     transform: rotate(45deg);
     animation: scroll 2s ease-in-out infinite;
+    animation-delay: 0.14s;
 }
 
 .arrow-2 {
     position: absolute;
     left: 50%;
-    top: 780px;
+    top: 772px;
     border: solid var(--purple);
-    border-width: 0 3px 3px 0;
+    border-width: 0 4px 4px 0;
     display: inline-block;
     padding: 10px;
     transform: rotate(45deg);
@@ -91,3 +92,4 @@
         transform: translateY(20px) rotate(45deg);
     }
 }
+
