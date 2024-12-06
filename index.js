@@ -23,51 +23,33 @@ window.onload = function () {
     setInterval(showNextImage, 3600);
 };
 
+/* Stop scrolldown animation when education section comes into view */
+const scrolldown = document.querySelector('.scrolldown');
+const educationSection = document.getElementById('education');
 
-// Circular animation for best-college-text
-const textElements = document.querySelectorAll(".best-college-text");
+// Create an Intersection Observer
+const observer = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                // Fade out the scroll-down animation
+                scrolldown.style.opacity = '0';
+                setTimeout(() => {
+                    scrolldown.style.display = 'none'; // Hide completely after fading
+                }, 800); // Transition duration 
+            } else {
+                // Show and fade in the scroll-down animation
+                scrolldown.style.display = 'block'; // Ensure it's visible again
+                setTimeout(() => {
+                    scrolldown.style.opacity = '1'; // Fade in after reappearing
+                }, 0);
+            }
+        });
+    },
+    {
+        threshold: 0.4, // Adjusts how much of the section needs to be in view
+    }
+);
 
-textElements.forEach((textElement) => {
-    const text = textElement.innerText;
-    const radius = 200; // Adjust this value for larger rotation outside the circle
-
-    textElement.innerHTML = text
-        .split("")
-        .map((char, i) => `
-            <span style="
-                position: absolute;
-                transform: rotate(${i * (360 / text.length)}deg) 
-                           translate(${radius}px) 
-                           rotate(${-i * (360 / text.length)}deg);
-                transform-origin: center;
-            ">
-                ${char}
-            </span>
-        `)
-        .join("");
-});
-
-// Select the root element
-const root = document.documentElement;
-
-// Function to show the scrollbar thumb
-function showScrollbar() {
-    root.style.setProperty('--scrollbar-thumb-opacity', '1');
-}
-
-// Function to hide the scrollbar thumb after a delay
-function hideScrollbar() {
-    root.style.setProperty('--scrollbar-thumb-opacity', '0');
-}
-
-// Event listener to detect scrolling
-let scrollTimeout;
-window.addEventListener('scroll', () => {
-    showScrollbar(); // Show scrollbar thumb on scroll
-
-    // Clear previous timeout to reset delay
-    clearTimeout(scrollTimeout);
-
-    // Set a timeout to hide the scrollbar after 500ms of no scrolling
-    scrollTimeout = setTimeout(hideScrollbar, 500);
-});
+// Observe the education section
+observer.observe(educationSection);

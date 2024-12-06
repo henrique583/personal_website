@@ -53,6 +53,11 @@
     color: var(--pink);
 }
 
+.scrolldown {
+    opacity: 1; 
+    transition: opacity 0.5s ease; 
+}
+
 .arrow-1 {
     position: absolute;
     left: 50%;
