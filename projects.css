@@ -1,5 +1,11 @@
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .placeholder-picture {
-    width: 200px;
+    width: 220px;
     border-radius: 50%;
     margin-top: 24vh;
 }
@@ -17,7 +23,7 @@
 /* From Uiverse.io by Nawsome */ 
 .loader {
     position: absolute;
-    left: 47.5%;
+    top: 64%;
     width: 75px;
     height: 100px;
   }

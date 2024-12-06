@@ -62,7 +62,7 @@
     display: inline-block;
     padding: 10px;
     transform: rotate(45deg);
-    animation: scroll 2s ease-in-out infinite;
+    animation: scroll 1.8s ease-in-out infinite;
     animation-delay: 0.14s;
 }
 
@@ -75,7 +75,7 @@
     display: inline-block;
     padding: 10px;
     transform: rotate(45deg);
-    animation: scroll 2s ease-in-out infinite;
+    animation: scroll 1.8s ease-in-out infinite;
 }
 
 @keyframes scroll {
@@ -91,5 +91,42 @@
         opacity: 0;
         transform: translateY(20px) rotate(45deg);
     }
+}
+
+.cs-text {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    color: white;
+    background: linear-gradient(white 0%, #500082 20%);
+    padding: 28px;
+}
+
+.williams {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #500082;
+    color: white;
+}
+
+.currently-text {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    color: white;
+    background: linear-gradient(#500082 0%, #3a006a 50%, #002676 100%);
+}
+
+.berkeley {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #002676;
+    color: white;
+    padding-bottom: 24px;
 }
 
