@@ -32,7 +32,7 @@ nav.menu {
     margin-left: auto;
     gap: 24px;
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 350;
 }
 
 nav.menu a {
@@ -49,7 +49,7 @@ nav.menu a:hover {
     background-color: var(--blue);
     color: white;
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 350;
     padding: 12px 24px;
     border: none;
     border-radius: 50px;

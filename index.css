@@ -101,14 +101,10 @@
 .cs-text {
     display: flex;
     justify-content: center;
-    margin: 0;
     color: white;
-    background: linear-gradient(white 0%, #500082 20%);
-    padding: 28px;
 }
 
 .williams {
-    padding-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -120,9 +116,7 @@
 .currently-text {
     display: flex;
     justify-content: center;
-    margin: 0;
     color: white;
-    background: linear-gradient(#500082 0%, #3a006a 50%, #002676 100%);
 }
 
 .berkeley {
@@ -132,6 +126,5 @@
     align-items: center;
     background-color: #002676;
     color: white;
-    padding-bottom: 24px;
 }
 
