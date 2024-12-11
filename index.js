@@ -53,3 +53,15 @@ const observer = new IntersectionObserver(
 
 // Observe the education section
 observer.observe(educationSection);
+
+// Permanent hover animations for williams and berkeley sections
+const williams = document.getElementById('williams');
+const berkeley = document.getElementById('berkeley');
+
+williams.addEventListener('mouseenter', () => {
+    williams.classList.add('active'); // Add the active class
+});
+
+berkeley.addEventListener('mouseenter', () => {
+    berkeley.classList.add('active'); // Add the active class
+});

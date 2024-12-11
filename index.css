@@ -101,30 +101,110 @@
 .cs-text {
     display: flex;
     justify-content: center;
-    color: white;
+    color: var(--purple);
+    margin-bottom: 24px;
 }
 
-.williams {
+#williams {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: 
+        linear-gradient(to bottom, #3b0066 5%, #500082 15%, #500082);
+    overflow: hidden;
+    text-decoration: none;
+    color: white; /* Inherit text color */
+}
+
+#williams-logo {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #500082;
-    color: white;
+    width: 100%;
+    background-color: transparent;
+    transition: transform 0.34s ease;
+    z-index: 2; /* Ensure it is above the image */
+}
+
+#williams-picture {
+    position: absolute;
+    right: 0;
+    width: 0;
+    height: 100%;
+    object-fit: cover;
+    transition: width 0.34s ease;
+    z-index: 1; /* Ensure it is below the logo */
+}
+
+/* Hover Effect */
+#williams.active #williams-logo {
+    transform: translateX(-25%); /* Keeps the logo shifted left */
+}
+
+#williams.active #williams-picture {
+    width: 50%; /* Keeps the picture visible */
 }
 
 .currently-text {
     display: flex;
     justify-content: center;
     color: white;
+    margin: 10px;
 }
 
-.berkeley {
+#berkeley {
+    display: flex;
+    justify-content: flex-end; /* Align content to the right */
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: 
+        linear-gradient(to top, #001A4D 5%, #002676 15%, #002676);
+    overflow: hidden;
+    text-decoration: none;
+    color: white; /* Inherit text color */
+}
+
+#berkeley-logo {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #002676;
-    color: white;
+    width: 100%;
+    background-color: transparent;
+    transition: transform 0.34s ease;
+    z-index: 2; /* Ensure it is above the image */
 }
 
+#berkeley-picture {
+    position: absolute;
+    left: 0; /* Position the campus picture on the left */
+    width: 0;
+    height: 100%;
+    object-fit: cover;
+    transition: width 0.34s ease;
+    z-index: 1; /* Ensure it is below the logo */
+}
+
+/* Hover Effect */
+#berkeley.active #berkeley-logo {
+    transform: translateX(25%); /* Keeps the logo shifted right */
+}
+
+#berkeley.active #berkeley-picture {
+    width: 50%; /* Keeps the picture visible */
+}
+
+#williams-logo,
+#williams-picture,
+#berkeley-logo,
+#berkeley-picture {
+    transition: all 0.34s ease;
+}

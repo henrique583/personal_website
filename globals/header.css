@@ -59,6 +59,7 @@ nav.menu a:hover {
     border: none;
     cursor: pointer;
     transition: background-color 0.2s ease;
+    z-index: 1000;
 }
 
 .contact-button:hover {

@@ -26,7 +26,9 @@
             </nav>
         </header>
         <main>
-            <button class="contact-button"><img src="assets/images/social-logos/contact-logo.svg" alt="contact-button" /></button>
+            <button class="contact-button">
+                <img src="assets/images/social-logos/contact-logo.svg" alt="contact-button" />
+            </button>
             <section id="intro">
                 <div class="photo-roulette">
                     <img class="photo photo-1" src="assets/images/intro-roulette/IMG_1006.jpeg" alt="IHMC picture" />
@@ -47,19 +49,21 @@
             </div>
             <section id="education">
                 <p class="cs-text">Computer Science '26 at ...</p>
-                <div class="williams">
-                    <img
-                        style="width: 450px"
-                        src="assets/images/schools/WILLIAMS_COLLEGE_LOGO_HALF_GOLD 1.svg"
-                        alt=""
-                    />
-                    <p>#1 Liberal Arts college in the US</p>
-                </div>
-                <p class="currently-text">Currently studying at ...</p>
-                <div class="berkeley">
-                    <p>#1 Public University in the US</p>
-                    <img style="width: 450px" src="assets/images/schools/ucberkeleylogo 1.svg" alt="" />
-                </div>
+                <a href="https://www.williams.edu/" target="_blank" rel="noopener noreferrer" id="williams">
+                    <div id="williams-logo">
+                        <img src="assets/images/schools/WILLIAMS_COLLEGE_LOGO_HALF_GOLD 1.svg" alt="Williams College Logo" />
+                        <p style="margin-bottom: 0; font-size: 32px;">#1 Liberal Arts college in the US</p>
+                    </div>
+                    <img id="williams-picture" src="assets/images/schools/williams-college.png" alt="Williams College Campus" />
+                </a>
+                <a href="https://www.berkeley.edu/" target="_blank" rel="noopener noreferrer" id="berkeley">
+                    <img id="berkeley-picture" src="assets/images/schools/uc-berkeley.jpg" alt="Williams College Campus" />
+                    <div id="berkeley-logo">
+                        <p class="currently-text"> Currently at ...</p>
+                        <img src="assets/images/schools/ucberkeleylogo 1.svg" alt="Berkeley College Logo" />
+                        <p style="margin: 0; font-size: 32px;">#1 Public University in the US</p>
+                    </div>
+                </a>
             </section>
         </main>
         <footer></footer>
@@ -114,7 +118,7 @@
             </div>
         </dialog>
         <script src="./globals/modal.js"></script>
-        <script src="index.js"></script>
+        <script src="./index.js"></script>
     </body>
 </html>
 <h1></h1>
