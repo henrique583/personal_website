@@ -168,7 +168,7 @@
         linear-gradient(to top, #001A4D 5%, #002676 15%, #002676);
     overflow: hidden;
     text-decoration: none;
-    color: white; /* Inherit text color */
+    color: white;
 }
 
 #berkeley-logo {
@@ -188,8 +188,8 @@
     left: 0; /* Position the campus picture on the left */
     width: 0;
     height: 100%;
-    object-fit: cover;
     transition: width 0.34s ease;
+    object-fit: cover;
     z-index: 1; /* Ensure it is below the logo */
 }
 

@@ -55,13 +55,20 @@ const observer = new IntersectionObserver(
 observer.observe(educationSection);
 
 // Permanent hover animations for williams and berkeley sections
+const education = document.getElementById('education'); 
 const williams = document.getElementById('williams');
 const berkeley = document.getElementById('berkeley');
 
-williams.addEventListener('mouseenter', () => {
-    williams.classList.add('active'); // Add the active class
+education.addEventListener('mouseenter', () => {
+    williams.addEventListener('mouseenter', () => {
+        williams.classList.add('active'); // Add the active class
+    });
+    berkeley.addEventListener('mouseenter', () => {
+        berkeley.classList.add('active'); // Add the active class
+    });
 });
 
-berkeley.addEventListener('mouseenter', () => {
-    berkeley.classList.add('active'); // Add the active class
+education.addEventListener('mouseleave', () => {
+    williams.classList.remove('active'); // Remove the active class
+    berkeley.classList.remove('active'); // Remove the active class
 });
