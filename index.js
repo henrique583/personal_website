@@ -23,9 +23,9 @@ window.onload = function () {
     setInterval(showNextImage, 3600);
 };
 
-/* Stop scrolldown animation when education section comes into view */
+/* Stop scrolldown animation when schools section comes into view */
 const scrolldown = document.querySelector('.scrolldown');
-const educationSection = document.getElementById('education');
+const schoolsSection = document.getElementById('schools');
 
 // Create an Intersection Observer
 const observer = new IntersectionObserver(
@@ -51,15 +51,15 @@ const observer = new IntersectionObserver(
     }
 );
 
-// Observe the education section
-observer.observe(educationSection);
+// Observe the schools section
+observer.observe(schoolsSection);
 
-// Permanent hover animations for williams and berkeley sections
-const education = document.getElementById('education'); 
+// Hover animations for williams and berkeley sections
+const schools = document.getElementById('schools'); 
 const williams = document.getElementById('williams');
 const berkeley = document.getElementById('berkeley');
 
-education.addEventListener('mouseenter', () => {
+schools.addEventListener('mouseenter', () => {
     williams.addEventListener('mouseenter', () => {
         williams.classList.add('active'); // Add the active class
     });
@@ -68,7 +68,8 @@ education.addEventListener('mouseenter', () => {
     });
 });
 
-education.addEventListener('mouseleave', () => {
+schools.addEventListener('mouseleave', () => {
     williams.classList.remove('active'); // Remove the active class
     berkeley.classList.remove('active'); // Remove the active class
 });
+

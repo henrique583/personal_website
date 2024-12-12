@@ -144,3 +144,7 @@ nav.menu a:hover {
 .contact-item p {
     text-align: right;
 }
+
+header a.active {
+    text-decoration: underline;
+}
