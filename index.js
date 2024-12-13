@@ -73,3 +73,45 @@ schools.addEventListener('mouseleave', () => {
     berkeley.classList.remove('active'); // Remove the active class
 });
 
+const animatedText = document.getElementById('changing-font');
+
+// Array of font families to cycle through
+const fonts = [
+    'Bitter',
+    'PermanentMarker',
+    'Cinzel',
+    'Fascinate',
+    'PirataOne'
+];
+
+// Array of colors to cycle through
+const colors = [
+    '#FF5733', // Vibrant Orange
+    '#33FF57', // Bright Green
+    '#FF33A6', // Pink
+    '#F3FF33', // Yellow
+    '#33FFF3', // Cyan
+];
+
+let currentFontIndex = 0;
+
+// Function to select a random color from the array
+function getRandomColor() {
+    const randomIndex = Math.floor(Math.random() * colors.length);
+    return colors[randomIndex];
+}
+
+// Function to change font and apply a random color
+function changeFontAndColor() {
+    // Change the font
+    animatedText.style.fontFamily = fonts[currentFontIndex];
+    
+    // Pick and apply a random color
+    animatedText.style.color = getRandomColor();
+
+    // Cycle through the font array
+    currentFontIndex = (currentFontIndex + 1) % fonts.length;
+}
+
+// Change the font and color every 1 second
+setInterval(changeFontAndColor, 800);

@@ -38,3 +38,34 @@ body {
     opacity: var(--scrollbar-thumb-opacity, 0);
     transition: opacity 0.3s ease; 
 }
+
+
+@font-face {
+    font-family: 'Bitter';
+    src: url('../assets/Bitter-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Bitter-italic';
+    src: url('../assets/Bitter-Italic-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cinzel';
+    src: url('../assets/Cinzel-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Fascinate';
+    src: url('../assets/Fascinate-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PermanentMarker';
+    src: url('../assets/PermanentMarker-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PirataOne';
+    src: url('../assets/PirataOne-Regular.ttf') format('truetype');
+}

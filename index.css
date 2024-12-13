@@ -217,6 +217,9 @@
     width: 800px;
 }
 
+#changing-font {
+    transition: font-family 0.5s ease;
+}
 
 
 #interests {
@@ -265,7 +268,6 @@ footer {
 }
 
 /* TODO
-1. Underline what page you're on in the nav
 2. "Hey there!..." Text should slide from the bottom when website opens up
 3. Changing font animation on "think creatively" text
 4. ^ Vertical rotating animation to change word from me -> you -> us
