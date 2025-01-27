@@ -204,7 +204,6 @@
     transition: all 0.34s ease;
 }
 
-
 .inspiration-text {
     display: flex;
     justify-content: center;
@@ -224,33 +223,46 @@
 
 #interests {
     display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
     background-color: #001039;
+    padding-top: 40px;
+    gap: 20px; 
+    padding-bottom: 100px;
 }
 
 .education, .health, .sustainability {
-    margin-top: 40px;
-    height: 800px;
-    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: start;
+    flex-direction: column;
+    align-items: center;
+    flex: 1; 
+    color: white;
 }
 
 .education img, .health img, .sustainability img {
     width: 250px;
-    margin-top: 40px;
-} 
-
-.education {
-
+    margin: 0 auto 20px; 
+    border-radius: 50%;
+    outline-offset: 5px;  
 }
 
-.health {
-
+.education img {
+    outline: 3px solid var(--yellow); 
 }
 
-.sustainability {
+.health img {
+    outline: 3px solid var(--pink); 
+}
 
+.sustainability img {
+    outline: 3px solid var(--green); 
+}
+
+.education ul, .health ul, .sustainability ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: white;
 }
 
 .inspiration-text-pt2 {
@@ -268,9 +280,6 @@ footer {
 }
 
 /* TODO
-2. "Hey there!..." Text should slide from the bottom when website opens up
-3. Changing font animation on "think creatively" text
-4. ^ Vertical rotating animation to change word from me -> you -> us
-5. Mouse pointer illuminates website 
-
+1. "Hey there!..." Text should slide from the bottom when website opens up
+2.. Mouse pointer illuminates website 
 */
